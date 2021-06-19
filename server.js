@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb+srv://Dustin:root6047@cluster0.phabr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+    process.env.MONGODB_URI || 'mongodb://localhost/workout', {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true,
